@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Run Wang
 
 # Username (this should match the folder name)
 authors:
@@ -10,11 +10,11 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
-
+role: Junior Student of Biomedical Engineering
+# Professor of Artificial Intelligence
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Fudan Univerisity
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
