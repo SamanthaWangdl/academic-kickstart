@@ -18,12 +18,12 @@ organizations:
   url: "https://www.fudan.edu.cn/en/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include deep learning, medical image, neuroinformics .
+bio: My research interests include Artificial Intelligence, Computational Neuroscience, Biomedical Engineering.
 
 interests:
 - Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Computational Neuroscience
+- Biomedical Engineering
 
 education:
   courses:
@@ -71,5 +71,5 @@ user_groups:
 I am currently a junior biomedical engineering student from Fudan University, educated as an electrical engineer. 
  My first exposure to research is about a magnetic hat for sports rehabilitation. At that time, the magic bonding between engineering and medicine initiated me towards this hybrid field. To engage in the real medical environment, I volunteered in the palliative hospital to accompany terminal cancer patients and also went to the summer school at Duke-NUS medical school in Singapore.
  I gradually realized that my curiosity towards biomedical engineering and computational neuroscience. And my 4.0 GPA in my second year convinced me that. Meanwhile, thanks to a doctor in the palliative hospital, who gave me inspiration for my new research on pain monitoring, I initiated my first research relevant to pain monitoring and published a conference paper on EMBC 2020.
-  
+
 
