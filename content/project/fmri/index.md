@@ -1,6 +1,6 @@
 +++
 # Project title.
-title = "Drug molecule representation"
+title = "Human Connectcome Project"
 
 # Date this page was created.
 date = 2017-11-29T00:00:00

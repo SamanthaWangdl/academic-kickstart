@@ -1,6 +1,6 @@
 +++
 # Project title.
-title = "Drug molecule representation"
+title = ""
 
 # Date this page was created.
 date = 2017-11-29T00:00:00
@@ -10,7 +10,7 @@ summary = "Creation of the economic impact assessement package iotables."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
-tags = ["R"]
+tags = ["Pain Monitoring with Physiological Signal"]
 
 # Optional external URL for project (replaces project detail page).
 # external_link = "https://runwang.xyz/page1/landing_page/"
