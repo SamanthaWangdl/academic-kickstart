@@ -31,7 +31,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "edX"
   organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
+  title = "Neuromatch Academy"
   url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
   certificate_url = "https://www.edx.org"
   date_start = "2018-03-01"
@@ -39,7 +39,7 @@ date_format = "Jan 2006"
   description = "Formulated informed blockchain models, hypotheses, and use cases."
   
 [[item]]
-  organization = "DataCamp"
+  organization = "Toefl"
   organization_url = "https://www.datacamp.com"
   title = "Object-Oriented Programming in R: S3 and R6 Course"
   url = ""
