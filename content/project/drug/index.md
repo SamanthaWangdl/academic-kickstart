@@ -13,7 +13,7 @@ summary = "Creation of the economic impact assessement package iotables."
 tags = ["R"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "http://iotables.ceemid.eu/"
+external_link = "https://runwang.xyz/page1/landing_page/"
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
