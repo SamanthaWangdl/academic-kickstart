@@ -36,7 +36,7 @@ date_format = "Jan 2006"
   certificate_url = "https://www.edx.org"
   date_start = "2018-03-01"
   date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
+  # description = "Formulated informed blockchain models, hypotheses, and use cases."
   
 [[item]]
   organization = "Toefl"
