@@ -19,7 +19,7 @@ subtitle = ""
   icon_pack = "fab"
   name = "R"
   description = "90%"
-  
+  url = "https://runwang.xyz/project/drug/" 
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
@@ -49,8 +49,3 @@ subtitle = ""
 #  description = "90%"
 
 +++
-```python
-# Example of code highlighting
-input_string_var = input("Enter some data: ")
-print("You entered: {}".format(input_string_var))
-```
