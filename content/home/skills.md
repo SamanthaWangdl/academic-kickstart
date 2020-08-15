@@ -49,3 +49,8 @@ subtitle = ""
 #  description = "90%"
 
 +++
+```python
+# Example of code highlighting
+input_string_var = input("Enter some data: ")
+print("You entered: {}".format(input_string_var))
+```
