@@ -1,16 +1,16 @@
 +++
 # Project title.
-title = "Drug molecule representation"
+title = "Coronavirus Drug Prediction based on Machine Learning and Graph Neural Network"
 
 # Date this page was created.
-date = 2017-11-29T00:00:00
+date = 2020-7-9T00:00:00
 
 # Project summary to display on homepage.
-summary = "Creation of the economic impact assessement package iotables."
+summary = "Our group tried all the methods of drug molecule representation learning under the MIT Drug Prediction Competition. We not only achieved 88% of auc-roc results, but also implemented all the drug molecule processing methods and solved the problem of data imbalance."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
-tags = ["R"]
+tags = ["Deep Learning"]
 
 # Optional external URL for project (replaces project detail page).
 # external_link = "https://runwang.xyz/page1/landing_page/"
@@ -27,25 +27,37 @@ slides = ""
 url_pdf = ""
 url_slides = ""
 url_video = ""
-url_code = "https://github.com/rOpenGov/iotables/"
+url_code = "https://github.com/SamanthaWangdl/PRMLfinalpj"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com/antaldaniel"}]
+#url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitter.com/antaldaniel"}]
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your project's folder. 
 [image]
   # Caption (optional)
-  caption = "Screenshot of the package website"
+  # caption = ""
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
+  
+ 
 +++
+## Summary
+Our group tried all the methods of drug molecule representation learning under this task. We not only achieved **88%** of auc-roc results, but also tried all the drug molecule processing methods seen in the paper, and tried to solve the problem of data imbalance. First of all, a variety of classical classification methods are performed on  three types of manually extracted chemical features. Secondly, four recurrent neural network structures were tried on the smiles string, and the highest roc was 0.64; Finally, the graph network which inculdes mpnn and gcn got 0.88 and 0.87 roc respectively. In addition, various sampling methods have been tried to solve the problem of data imbalance
 
-The symmetric input-output tables (SIOTs) are complex statistical products that present inter-related statistics in a predefined structure. They are often found in spreadsheets that follow this structure, or in the case Eurostat in a data repository. In both cases they in reproducible research must be downloaded and restructured to programmatically accessible form. Often these highly structured statistics need to be analyzed together with other data, for example, when employment effects and multipliers are calculated. In this case processing the employment data to SIOT conforming format is a significant preprocessing challenge.
-
-The iotables are exactly designed for these tasks. Currently the package downloads and processes standardized European SIOTs conforming to the latest statistical regulations, i.e. SIOTs starting from the year 2010.
-
-In order to test the analytical functions of the package and to have a manageable sized example data set, we use the real-life data from the Eurostat manual. The calculation of induced effects (Type-II multipliers) are following the Input-Output Multipliers Specification Sheet and Supporting Material, Spicosa Project Report. The analytical functions are tested against this example, too.
+## Classic Methods
+### Classification method based on molecular descriptor
+Molecular descriptor is an important tool of chemometrics, which refers to the measurement of a certain aspect of a molecule, which can be the physical and chemical properties of the molecule.Molecular Fingerprints can also be a numerical index derived through various algorithms based on the molecular structure. It includes various theories or experiments spectral data (such as ultraviolet spectrum), molecular composition (such as hydrogen bond donor number, chemical bond number), physical and chemical properties (such as ester water distribution coefficient) description characters, molecular field descriptors, and molecular shape descriptors. Molecular descriptors can be the most important and effective feature of this question. Compared with the complex network structure, we found that using better molecules descriptor features can bring greater growth to the results.
+The special python package Rdkit provides convenient functions for processing Smiles strings and extracting molecular descriptors.
+Conveniently, you can extract 299 molecular descriptor features of smiles strings.
+```python
+def get_fps(mol):
+calc=MoleculeDescriptors.MolecularDescriptorCalculator([x[0] for x in
+Descriptors._descList])
+ds = np.asarray(calc.CalcDescriptors(mol))
+arr=Fingerprinter.FingerprintMol(mol)[0]
+return np.append(arr,ds)
+```
