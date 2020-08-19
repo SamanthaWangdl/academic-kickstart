@@ -142,7 +142,7 @@ bond_feature = dc.feat.graph_features.bond_features()
 
 In the article *Analyzing Learned Molecular Representations for Property Prediction*, the author used the following features as the atomic and chemical bond features.
 
-{{< figure library="true" src="drug3.jpg" title="rnn structure" style="zoom: 60%;" >}}
+{{< figure library="true" src="drug3.jpg" title="Node&Edge" style="zoom: 60%;" >}}
 
 Similarly, using deepchem's feature extraction function, we can get:
 
@@ -192,7 +192,7 @@ MPNN has achieved good results on the roc value, and has strong generalization a
 
 #### ROC
 
-{{< figure library="true" src="drug4.jpg" title="mol2vec" style="zoom: 40%;" >}}
+{{< figure library="true" src="drug4.jpg" title="Roc Curve" style="zoom: 40%;" >}}
 
 The figure above shows the change of ROC curve during fold `5,6,7` training. The first column of data is the ROC curve of the first iteration, the middle column is the result of the 100th iteration, and the third column Is the result of the last iteration. In the experiment, as the number of epochs increases, the loss decreases, and the roc value tends to increase. But it is not always on an upward trend. It can be seen that there are three folds in the figure, and the roc in the third column of data is slightly inferior to the middle column.
 
