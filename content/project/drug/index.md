@@ -80,17 +80,41 @@ data['fingerprint']=data['mol'].apply(lambda m:
 AllChem.GetMorganFingerprintAsBitVect(m, radius=2, nBits=2048))
 ```
 
-### Classification method based on mol2vec
+### Classification Method Based on Mol2vec
 
 In the previous section, we talked about the problem of excessively high latitude of molecular fingerprints, analogous to the relationship between words and sentences in natural language processing, in molecular representation, we consider the fingerprint of the molecule as a vocabulary, and the molecule as a sentence, then the word2vec method in natural language processing can be used.
 
-{{< figure library="true" src="drug1.jpg" title="mol2vec" style="zoom: 60%;" >}}
+{{< figure library="true" src="drug1.jpg" title="mol2vec" style="zoom: 40%;" >}}
 
 In the article Mol2vec: Unsupervised Machine Learning Approach with Chemical Intuition, by using the word2vec algorithm on the molecule, the high-dimensional molecular fingerprint can be reduced to a 300-dimensional word embedding vector. 
 We use the mol2vec method here to treat each molecule in the smiles formula as a sentence, and each molecular fingerprint (fingerprints can be regarded as molecular substructure) as words. After mol2vec, we get the word vector representation of each word, and we think that each molecule is its the sum of substructure word vectors, so the vector of all substructures of each molecule represents the representation of both molecules.
 Each molecule is represented as a 300-dimensional vector, and we use the random forest and multilayer perceptron used in the previous sections to perform the task of E. coli and get the average roc and prc on the 10-fold.
 
+|      | Random Forest | Multilayer Perceptron |
+| ---- | ------------- | --------------------- |
+| roc  | 82.3%         | 71.4%                 |
+| prc  | 45.6%         | 37.2%                 |
 
+### Molecular Descriptor, Mol2vec, Molecular Fingerprint Feature Hybrid
+
+In order to make the representation of feature engineering cover as much information as possible, I tried to splice the above three features to effectively improve the results of roc.
+
+|      | Random Forest |
+| ---- | ------------- |
+| roc  | 85%           |
+| prc  | 44%           |
+
+## Recurrent Neural Nework
+
+Referring to the practice in the article SMILES2Vec: An Interpretable General-Purpose Deep Neural Network for Predicting Chemical Properties, it is believed that the method of converting the string smiles into a vector can be regarded as a method of predicting its physical and chemical properties. As for the method of processing strings, we can try the method of recurrent neural network.
+
+In fact, before the graph network was applied to the problem of chemical molecules, both the cv and NLP methods were used to predict the properties of chemical molecules. The cv method was used to process molecular graphs, and the nlp method was used to process smiles. We can see that the advantage of the neural network here compared to the classical method is that it no longer requires expert experience, and results can be produced solely by relying on the network.
+
+But the main question here is whether the Amiles string can express all the characteristics of the molecule? We know that for a cyclic molecule with a complex structure, different expressions of smiles can be formed by breaking the chain from different positions, but in fact these molecules are a substance, but the expression of smiles has undergone a huge transformation. This problem leads to multiple expressions of smiles in a molecule. At the same time, the molecular data in our data is too small, in fact, training rnn is not sufficient.
+
+In trying to use the cyclic network method, I tried four network structures. The overall result is not as good as the classic method. The overall network framework follows the seq2seq framework, adjusted to use no rnn layer, and also tried to add a one-dimensional convolutional layer.
+
+{{< figure library="true" src="drug2.jpg" title="rnn structure" style="zoom: 60%;" >}}
 
 
 
