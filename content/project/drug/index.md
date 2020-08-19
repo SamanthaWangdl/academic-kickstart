@@ -84,9 +84,11 @@ AllChem.GetMorganFingerprintAsBitVect(m, radius=2, nBits=2048))
 
 In the previous section, we talked about the problem of excessively high latitude of molecular fingerprints, analogous to the relationship between words and sentences in natural language processing, in molecular representation, we consider the fingerprint of the molecule as a vocabulary, and the molecule as a sentence, then the word2vec method in natural language processing can be used.
 
-{{< figure library="true" src="1.jpg" title="mol2vec" >}}
+{{< figure library="true" src="drug1.jpg" title="mol2vec" >}}
 
 In the article Mol2vec: Unsupervised Machine Learning Approach with Chemical Intuition, by using the word2vec algorithm on the molecule, the high-dimensional molecular fingerprint can be reduced to a 300-dimensional word embedding vector. 
 We use the mol2vec method here to treat each molecule in the smiles formula as a sentence, and each molecular fingerprint (fingerprints can be regarded as molecular substructure) as words. After mol2vec, we get the word vector representation of each word, and we think that each molecule is its the sum of substructure word vectors, so the vector of all substructures of each molecule represents the representation of both molecules.
 Each molecule is represented as a 300-dimensional vector, and we use the random forest and multilayer perceptron used in the previous sections to perform the task of E. coli and get the average roc and prc on the 10-fold.
+
+
 
