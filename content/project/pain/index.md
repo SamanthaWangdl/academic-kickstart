@@ -3,7 +3,7 @@
 title = "Hybrid RNN-ANN Based Deep Physiological Network for Pain Recognition"
 
 # Date this page was created.
-date = 2020-7-27T00:00:00
+date = 2020-07-27T00:00:00
 
 # Project summary to display on homepage.
 summary = "In this study, we enriched the methods of physiological-signal- based pain classification by introducing deep Recurrent Neural Network (RNN) based hybrid classifier."
