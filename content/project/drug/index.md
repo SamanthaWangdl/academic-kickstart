@@ -116,5 +116,30 @@ In trying to use the cyclic network method, I tried four network structures. The
 
 {{< figure library="true" src="drug2.jpg" title="rnn structure" style="zoom: 60%;" >}}
 
+The following table shows the results of the recurrent network. You can see from the results that the level of aucroc actually fluctuates around 0.6-0.7, even if it is good, it is only 0.71, and at the same time prc is low, as we used in the previous feature extraction and classical methods. The results cannot be compared. However, the cyclic network does not require humans to manually extract features, which is its advantage, but the ability to extract features is far from the graph network.
+
+|               | aucprc | aucroc |
+| ------------- | ------ | ------ |
+| bigru+bigru   | 0.11   | 0.73   |
+| bilstm+bilstm | 0.08   | 0.60   |
+| cnn+gru       | 0.11   | 0.71   |
+| cnn           | 0.12   | 0.65   |
 
 
+
+## Graph Neural Network
+
+### Data Prepossessing
+
+In the graph neural network, in addition to the network structure which has a great impact on the effectiveness of the model, the node and edge information of the graph is also important as input. Here, we mainly discuss the feature extraction of edges and nodes in data preprocessing.
+
+The open source architecture **Deepchem** provides us with an effective method to extract atoms and edge features from molecules:
+
+```python
+node_feature = dc.feat.graph_features.atom_features()
+bond_feature = dc.feat.graph_features.bond_features()
+```
+
+In the article *Analyzing Learned Molecular Representations for Property Prediction*, the author used the following features as the atomic and chemical bond features.
+
+{{< figure library="true" src="drug3.jpg" title="rnn structure" style="zoom: 60%;" >}}
