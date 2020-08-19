@@ -1,19 +1,19 @@
 +++
 # Project title.
-title = "Pain Monitoring with Physiological Signal"
+title = "Hybrid RNN-ANN Based Deep Physiological Network for Pain Recognition"
 
 # Date this page was created.
-date = 2017-11-29T00:00:00
+date = 2020-7-27T00:00:00
 
 # Project summary to display on homepage.
-summary = "Creation of the economic impact assessement package iotables."
+summary = "In this study, we enriched the methods of physiological-signal- based pain classification by introducing deep Recurrent Neural Network (RNN) based hybrid classifier."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
 tags = ["Pain Monitoring with Physiological Signal"]
 
 # Optional external URL for project (replaces project detail page).
-# external_link = "https://runwang.xyz/page1/landing_page/"
+
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
@@ -27,7 +27,7 @@ slides = ""
 url_pdf = ""
 url_slides = ""
 url_video = ""
-url_code = "https://github.com/rOpenGov/iotables/"
+url_code = "https://github.com/SamanthaWangdl/painrnn"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
@@ -38,7 +38,7 @@ url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://
 [image]
   # Caption (optional)
   caption = "Screenshot of the package website"
-  
+
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
