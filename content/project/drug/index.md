@@ -143,3 +143,93 @@ bond_feature = dc.feat.graph_features.bond_features()
 In the article *Analyzing Learned Molecular Representations for Property Prediction*, the author used the following features as the atomic and chemical bond features.
 
 {{< figure library="true" src="drug3.jpg" title="rnn structure" style="zoom: 60%;" >}}
+
+Similarly, using deepchem's feature extraction function, we can get:
+
+| Property            | Length |
+| ------------------- | ------ |
+| Symbol              | 44     |
+| Degree              | 10     |
+| Valence             | 6      |
+| Formal Charge       | 5      |
+| Radical Electronics | 4      |
+| Hybridization       | 5      |
+| Aromaticity         | 1      |
+
+The above features use one-hot encoding, and the total length of the encoded features is 75. In order to further enhance the capabilities of the network model, we consider adding new features.
+
+### Graph Neural Network
+
+Message Passing Neural Networks (MPNN) is a general framework of graph neural networks proposed by Google. Empirically, it has an excellent performance in predicting the properties of chemical molecules. Therefore, in the method of using graph networks, we prefer to use MPNN to achieve the task of molecular performance prediction.
+$$
+m_{v}^{t + 1} = \sum_{w\in N(v)}M_t(h_v^t, h_w^t, e_{vw})\\h_v^{t+1} = U_t(h_v^t, m_v^{t+1})\\y = R({h_v^T|v\in G})
+$$
+
+| Layer | Input                                             | Output            |
+| ----- | ------------------------------------------------- | ----------------- |
+| Lin0  | n_feature_dim                                     | n_h_feature_dim_1 |
+| Lin1  | e_feature_dim                                     | e_h_feature_dim   |
+| Lin2  | n_h_feature_dim + n_feature_dim + e_h_feature_dim | n_feature_dim     |
+| Lin3  | 2 * n_feature_dim                                 | n_h_feature_dim_2 |
+| Lin4  | n_h_feature_dim_2                                 | 1                 |
+
+ 
+
+```python
+self.lin0 = {0: nn.Linear(self.n_feature_dim, self.n_h_feature_dim), 
+        1: nn.Linear(self.n_feature_dim, self.n_h_feature_dim), 
+        2: nn.Linear(self.n_feature_dim, self.n_h_feature_dim)}
+self.lin1 = nn.Linear(self.e_feature_dim, self.e_h_feature_dim)
+self.lin2 = {
+  			0: nn.Linear(self.n_h_feature_dim + self.n_feature_dim + self.e_h_feature_dim, self.e_h_feature_dim),
+        1: nn.Linear(self.n_h_feature_dim + self.n_feature_dim + self.e_h_feature_dim, self.e_h_feature_dim), 
+        2: nn.Linear(self.n_h_feature_dim + self.n_feature_dim + self.e_h_feature_dim, self.e_h_feature_dim)}
+self.lin3 = nn.Linear(2 * self.n_feature_dim, self.n_out_dim)
+self.lin4 = nn.Linear(self.n_out_dim, 1)
+```
+
+MPNN has achieved good results on the roc value, and has strong generalization ability. It can get an average of 0.8838 `roc_auc` on the test set, but the performance of `prc` is not satisfactory. We know that the roc curve remains unchanged when the distribution of positive and negative samples changes. And prc can show the ability to model on tilted data sets. Since in this data set, the positive samples are much smaller than the negative samples, the low roc reflects that the classifier misjudges a large number of negative examples as positive examples. It can be seen from the training process that after multiple iterations, both the values of `roc_auc` and `prc_auc` can reach values close to 1 in the training data. Therefore, the model may have over-fitting behavior and poor generalization ability.
+
+#### ROC
+
+{{< figure library="true" src="drug4.jpg" title="mol2vec" style="zoom: 40%;" >}}
+
+The figure above shows the change of ROC curve during fold `5,6,7` training. The first column of data is the ROC curve of the first iteration, the middle column is the result of the 100th iteration, and the third column Is the result of the last iteration. In the experiment, as the number of epochs increases, the loss decreases, and the roc value tends to increase. But it is not always on an upward trend. It can be seen that there are three folds in the figure, and the roc in the third column of data is slightly inferior to the middle column.
+
+### GCN
+
+Graph Convolutional Neural Network (GCN) is also a commonly used graph network structure. We also want to know whether MPNN has better capabilities in molecular performance prediction tasks than GCN. In the experiment, the GCN structure we tried is as follows: `1 layer embedding layer + n layer convolution layer + 1 layer fully connected layer`.
+
+| Layer         | input            | Output           |
+| ------------- | ---------------- | ---------------- |
+| **Embedding** | node_input_dim   | node_feature_dim |
+| **Conv**      | node_feature_dim | node_feature_dim |
+| **Fc**        | node_feature_dim | 1                |
+
+|            | ROC_AUC | PRC_AUC |
+| ---------- | ------- | ------- |
+| **fold 0** | 0.9367  | 0.7106  |
+| **fold 1** | 0.9035  | 0.5185  |
+| **fold 2** | 0.8718  | 0.5914  |
+| **fold 3** | 0.5644  | 0.0282  |
+| **fold 4** | 0.9308  | 0.8439  |
+| **fold 5** | 0.6869  | 0.4133  |
+| **fold 6** | 0.8502  | 0.0156  |
+| **fold 7** | 0.9810  | 0.7269  |
+| **fold 8** | 0.9531  | 0.1251  |
+| **fold 9** | 0.9429  | 0.8149  |
+| **mean**   | 0.8754  | 0.4788  |
+
+It can be seen that in GCN training, although `roc` can achieve good performance in most compromises, there are still relatively poor data (such as fold3). And there is an experimental process to know that in relatively large data, such as fold3, fold5, there are still very impressive results (>0.9) on the training set, which is caused by the poor generalization ability of the model. Although GCN's `roc` performance is slightly inferior to MPNN-1, it has a stronger performance on `prc`, which shows that the GCN model has a stronger ability to deal with our skewed data set
+
+There is no chemical bond characteristic information, just using a simple network structure, you can still get good results. This may be due to the limited contribution of chemical bond information to the prediction of chemical properties, or the complex network is not effective enough to express information.
+
+## Conclusion
+
+In the drug prediction task, we tried classical methods, recurrent network methods and graph network methods, and optimized sampling and integration in the imbalance problem, achieving most of the existing solutions to the drug prediction problem.
+
+The classical method mainly relies on feature engineering, because chemical molecular science has already precipitated very mature molecular features. The extraction of molecular descriptors and molecular fingerprints can achieve a roc of 0.80 or more even with a simple classifier.
+
+The use of recurrent networks, although it was our first thought when we saw smiles strings, did not work well, and the training time was too long, so a simple recurrent network may not be suitable for drug prediction tasks.
+
+In the task of predicting drug properties, both the graph neural network MPNN and GCN show certain predictive capabilities. Among them, the roc of GCN can reach 0.8754, and the prc can reach 0.4788. MPNN performs better on roc, reaching 0.8838, but the prc value is not good, only 0.2383. Although the effect of graph neural network is considerable, the training time is long, and due to the small amount of data, the data distribution is skewed, the model may have overfitting problems, and the generalization ability still needs to be strengthened.
