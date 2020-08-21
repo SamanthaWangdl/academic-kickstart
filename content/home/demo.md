@@ -65,6 +65,6 @@ subtitle = ""
 ## :hammer: Engineering
 
 - **Analog Circuit & Digital Logic & High Frequency and Radio Frequency Electronics**
-- **Signal and System** **&  Information Theory & automatic control**
+- **Signal and System** **&  Information Theory & Automatic Control**
 - **Pattern Recognition and Machine Learning**
 
