@@ -50,7 +50,19 @@ subtitle = ""
  css_class = ""
 +++
 
-Welcome to the **Academic Kickstart** template!
+## :triangular_ruler:Math
 
+- **Mathematical  Analysis**
+- **Linear Algebra**
+- **Engineering Mathematics**
+- **Probability Statistics & Random Processes**
 
+## :computer: Programming
+
+- **Language： Python, Matlab, C, C++, R**
+- **Algorithm & Data Structure**
+
+## :hammer: Engineering
+
+- 
 
