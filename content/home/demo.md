@@ -59,10 +59,12 @@ subtitle = ""
 
 ## :computer: Programming
 
-- **Language： Python, Matlab, C, C++, R**
+- **Language： Python, Matlab, C, C++, R, verilog**
 - **Algorithm & Data Structure**
 
 ## :hammer: Engineering
 
-- 
+- **Analog Circuit & Digital Logic & High Frequency and Radio Frequency Electronics**
+- **Signal and System** **&  Information Theory & automatic control**
+- **Pattern Recognition and Machine Learning**
 
