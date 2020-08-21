@@ -8,12 +8,12 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 35  # Order that this section will appear.
 
-title = "Skills & Knolowdge Base"
-subtitle = ""
+title = "Knowledge Base"
+subtitle = "Skills and Knowledge Base"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
-  columns = "1"
+  columns = "2"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -41,7 +41,7 @@ subtitle = ""
 
 [design.spacing]
   # Customize the section spacing. Order is top, right, bottom, left.
-  padding = ["50px", "20px", "20px", "40px"]
+  padding = ["50px", "20px", "20px", "60px"]
 
 [advanced]
  # Custom CSS. 
