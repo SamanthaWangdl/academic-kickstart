@@ -1,5 +1,5 @@
 ---
-title: Posts
+title: Disjoint-Set Data Structure for Circuit Diagram Detection
 
 # View.
 #   1 = List
@@ -10,5 +10,5 @@ view: 2
 # Optional header image (relative to `static/media/` folder).
 header:
   caption: ""
-  image: ""
+  image: "circuit.jpg"
 ---
