@@ -35,7 +35,10 @@ url_code = "https://github.com/SamanthaWangdl/datastructure_fudan_2020"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your project's folder. 
-[image]
+header:
+  caption: ""
+  image: "circuit.jpg"
+
   # Caption (optional)
   # caption = ""
 
