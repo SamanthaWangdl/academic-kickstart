@@ -61,7 +61,7 @@ subtitle = "Skills and Knowledge Base"
 ## :computer: Programming
 
 - **Language： Python, Matlab, C, C++, R, verilog**
-- **Algorithm & Data Structure**
+- [**Algorithm & Data Structure**]({{< ref "/post/datastructure.md" >}})
 
 ## :hammer: Engineering
 
