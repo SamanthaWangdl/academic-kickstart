@@ -2,10 +2,9 @@
 title = "Disjoint-Set Data Structure for Circuit Diagram Detection "
 date = 2020-05-20T00:00:00
 summary = "One of the interesting assignments of data structure "
-# tags = ["Data Structure"]
+tags = ["Data Structure"]
 url_code = "https://github.com/SamanthaWangdl/datastructure_fudan_2020"
-header:  
-  image: "circuit.jpg"
+#image: "circuit.jpg"
 
 # Caption (optional)
 # caption = ""
@@ -15,3 +14,4 @@ header:
 focal_point = "Smart"
 
 +++
+{{< figure library="true" src="circuit.jpg" title="A caption" >}}
