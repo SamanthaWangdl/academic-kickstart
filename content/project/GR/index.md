@@ -10,7 +10,7 @@ summary = "We focus on the node selection problem of grounded Laplacian matrix "
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
-# tags = ["R"]
+tags = ["Complex network"]
 
 # Optional external URL for project (replaces project detail page).
 # external_link = "http://iotables.ceemid.eu/"
