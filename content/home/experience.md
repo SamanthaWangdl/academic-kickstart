@@ -17,29 +17,6 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
-<!-- [[experience]]
-  title = Research Intern
-  company = Georgia Tech
-  company_url = ""
-  location = Shanghai
-  date_start = "2021-05-15"
-  date_end = ""
-  description = |2-
-    Research Topic:
-  
-      * Intepretable Pain Monitoring Method
-  
-
-[[experience]]
-  title = Undergraduate Researcher
-  company = Fudan University, Junzheng Granding
-  company_url = ""
-  location = Shanghai
-  date_start = "2020-11-1"
-  date_end = "2021-5-1"
-  description = Work on project relevant to graph spectral optimization algorithm design.
-
-+++ -->
 [[experience]]
   title = "CEO"
   company = "GenCoin"
