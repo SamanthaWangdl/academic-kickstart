@@ -35,4 +35,15 @@ date_format = "Jan 2006"
   date_end = "2021-05-01"
   description = """[graph spectral optimization algorithm design](https://runwang.xyz/project/gr/)."""
 
+[[experience]]
+  title = "Neuromatch NMA Student"
+  company = "Neuromatch Academy"
+  company_url = ""
+  location = ""
+  date_start = "2020-07-01"
+  date_end = "2020-08-01"
+  description = """[Study computational neuroscience](https://github.com/SamanthaWangdl/course-content)"""
+
+
+
 +++
