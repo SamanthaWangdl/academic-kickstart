@@ -68,7 +68,7 @@ user_groups:
 - Visitors
 ---
 
-I am currently a junior electrical engineer(biomedical engineering) student from Fudan University with a top 1 GPA score in my major. With a long time volunteering experience in a hospice care center, I have committed myself to biomedical engineering research and innovation ever since. 
+I am currently a junior electrical engineer (biomedical engineering) student from Fudan University with a top 1 GPA score in my major. With a long time volunteering experience in a hospice care center, I have committed myself to biomedical engineering research and innovation ever since. 
 
 My research interest originated from real-clinical problems, like pain monitoring, and ranges from machine learning study in temporal series and graphs to complex network and cybernetics. 
 
