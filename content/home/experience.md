@@ -12,6 +12,7 @@ subtitle = "How my commitment in healthcare tech developed"
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
 date_format = "Jan 2006"
 
+[design.background]
 # Background image.
   image = "background.jfif"  
   # Name of image in `static/media/`.
