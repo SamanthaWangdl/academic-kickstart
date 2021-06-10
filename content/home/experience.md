@@ -68,8 +68,8 @@ date_format = "Jan 2006"
   company = "Shanghai Jingan Community Hospital"
   company_url = ""
   location = "Shanghai"
-  date_start = "2019-07-01"
-  date_end = "2019-08-01"
+  date_start = "2018-09-01"
+  date_end = "2019-07-01"
   description = """Take care of cancer terminal patients and organize volunteers service """
 
 
