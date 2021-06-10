@@ -10,7 +10,7 @@ summary = "In this study, we enriched the methods of physiological-signal- based
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
-tags = ["Pain Monitoring with Physiological Signal"]
+tags = ["Deep Learning"]
 
 # Optional external URL for project (replaces project detail page).
 
