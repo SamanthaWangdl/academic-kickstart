@@ -47,7 +47,7 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Undergraduate Researcher"
-  company = "Fudan University, Prof. Wei Chen and Prof. Hui Feng"
+  company = "Fudan University, Prof. [Wei Chen](https://scholar.google.com/citations?user=9MI4cHkAAAAJ&hl=zh-CN) and Prof. [Hui Feng](https://scholar.google.com/citations?user=fuoFLGcAAAAJ&hl=zh-CN)"
   company_url = ""
   location = ""
   date_start = "2019-08-01"
