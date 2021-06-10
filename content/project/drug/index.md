@@ -6,7 +6,7 @@ title = "Coronavirus Drug Prediction based on Machine Learning and Graph Neural 
 date = 2020-07-09T00:00:00
 
 # Project summary to display on homepage.
-summary = "Our group tried all the methods of drug molecule representation learning under the MIT Drug Prediction Competition. We not only achieved 88% of auc-roc results, but also implemented all the drug molecule processing methods and solved the problem of data imbalance."
+summary = "Our group tried all the methods of drug molecule representation learning under the MIT Drug Prediction Competition and achieved 88% of auc-roc results and solved the problem of data imbalance."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
