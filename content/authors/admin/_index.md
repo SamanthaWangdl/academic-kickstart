@@ -72,6 +72,6 @@ I am currently a junior electrical engineer (biomedical engineering) student fro
 
 My research interest originated from real-clinical problems, like pain monitoring, and ranges from machine learning study in temporal series and graphs to complex network and cybernetics. 
 
-With distinguished undergraduate research granting from a Nobel laureate, I completed a complex network control algorithm design. Besides, I am also engaging in pain monitoring problems and exploring the interpretability of them with the guide from Prof. Gari Clifford.
+With distinguished undergraduate research granting from a Nobel laureate, I completed a complex network control algorithm design with [Prof.Zhongzhi Zhang]{https://scholar.google.com/citations?user=DrcEuSkAAAAJ&hl=zh-CN}. Besides, I am also engaging in pain monitoring problems and exploring the interpretability of them with the guide from [Prof. Gari Clifford]{https://scholar.google.com/citations?user=VwYoZ6gAAAAJ&hl=zh-CN}.
 
-I will apply for Ph.D. at the end of 2021.
+I will apply for Ph.D. degree at the end of 2021.
