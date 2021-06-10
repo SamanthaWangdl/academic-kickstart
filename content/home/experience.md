@@ -50,16 +50,7 @@ date_format = "Jan 2006"
   company = "Fudan University, Prof. Wei Chen and Prof. Hui Feng"
   company_url = ""
   location = ""
-  date_start = "2019-05-01"
-  date_end = "2020-02-01"
-  description = """Work on [pain classification](https://runwang.xyz/project/pain/) problem with deep learning method"""
-
-[[experience]]
-  title = "Undergraduate Researcher"
-  company = "Fudan University, Prof. Wei Chen and Prof. Hui Feng"
-  company_url = ""
-  location = ""
-  date_start = "2019-05-01"
+  date_start = "2019-08-01"
   date_end = "2020-02-01"
   description = """Work on [pain classification](https://runwang.xyz/project/pain/) problem with deep learning method"""
 
