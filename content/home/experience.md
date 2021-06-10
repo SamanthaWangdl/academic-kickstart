@@ -27,12 +27,12 @@ date_format = "Jan 2006"
   description = """Intepretable Pain Monitoring Method"""
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
+  title = "Undergraduate Researcher"
+  company = "Fudan University"
   company_url = ""
   location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  date_start = "2020-11-01"
+  date_end = "2021-05-01"
+  description = """graph spectral optimization algorithm design."""
 
 +++
