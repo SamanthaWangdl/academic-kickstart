@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
 title = "Experience"
-subtitle = ""
+subtitle = "How my commitment in healthcare tech developed"
 
 # Date format for experience
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
@@ -33,7 +33,7 @@ date_format = "Jan 2006"
   location = "California"
   date_start = "2020-11-01"
   date_end = "2021-05-01"
-  description = """[graph spectral optimization algorithm design](https://runwang.xyz/project/gr/)."""
+  description = """[graph spectral optimization algorithm design](https://runwang.xyz/project/gr/)"""
 
 [[experience]]
   title = "Neuromatch NMA Student"
@@ -47,12 +47,30 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Undergraduate Researcher"
-  company = "Fudan University, Prof.Wei Chen and Prof.Hui Feng"
+  company = "Fudan University, Prof. Wei Chen and Prof. Hui Feng"
   company_url = ""
   location = ""
   date_start = "2019-05-01"
   date_end = "2020-02-01"
   description = """Work on [pain classification](https://runwang.xyz/project/pain/) problem with deep learning method"""
+
+[[experience]]
+  title = "Undergraduate Researcher"
+  company = "Fudan University, Prof. Wei Chen and Prof. Hui Feng"
+  company_url = ""
+  location = ""
+  date_start = "2019-05-01"
+  date_end = "2020-02-01"
+  description = """Work on [pain classification](https://runwang.xyz/project/pain/) problem with deep learning method"""
+
+[[experience]]
+  title = "Exchange Student"
+  company = "DUKE-NUS Medical School"
+  company_url = "https://www.duke-nus.edu.sg/"
+  location = "Singpore"
+  date_start = "2019-07-01"
+  date_end = "2019-08-01"
+  description = """Exchange experience in medical school inspired me to work on BME research"""
 
 
 +++
