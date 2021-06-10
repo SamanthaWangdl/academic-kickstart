@@ -1,12 +1,13 @@
 +++
 # Project title.
-title = "R"
+title = "Maximizing the Smallest Eigenvalue of Grounded
+Laplacian Matrix by Node Selection"
 
 # Date this page was created.
 date = 2017-11-29T00:00:00
 
 # Project summary to display on homepage.
-summary = "Creation of the economic impact assessement package iotables."
+summary = "The smallest eigenvalue of a grounded Laplacian matrix plays a pivotal role in complex networks, such as system control, convergence rate and the robustness of a system. In this paper, we focus on the node selection problem of maximizing the smallest eigenvalue of the grounded Laplacian matrix for a graph."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
