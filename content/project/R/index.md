@@ -13,7 +13,7 @@ summary = "We focus on the node selection problem of grounded Laplacian matrix "
 # tags = ["R"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "http://iotables.ceemid.eu/"
+# external_link = "http://iotables.ceemid.eu/"
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
