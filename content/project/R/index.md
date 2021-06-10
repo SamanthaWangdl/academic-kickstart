@@ -1,13 +1,12 @@
 +++
 # Project title.
-title = "Maximizing the Smallest Eigenvalue of Grounded
-Laplacian Matrix"
+title = "Maximizing the Smallest Eigenvalue"
 
 # Date this page was created.
 date = 2017-11-29T00:00:00
 
 # Project summary to display on homepage.
-summary = "We focus on the node selection problem of maximizing the smallest eigenvalue of the grounded Laplacian matrix "
+summary = "We focus on the node selection problem of grounded Laplacian matrix "
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
