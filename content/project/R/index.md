@@ -43,23 +43,7 @@ Laplacian Matrix by Node Selection" -->
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = "Smart"
+  # focal_point = "Smart"
 +++
-
-
-Grounded Laplacian matrix, a principal submatrix of the Laplacian matrix, functions as a significant model in network control study. Due to the impossibility of controlling all nodes in the network, steering a fraction of nodes is a significant al- ternative, which relates to grounded Laplacian matrix closely. Both pinning control and leader selection problem employ grounded Laplacian matrix as their model, and the eigenvalue of the grounded Laplacian matrix performs as efficient metrics in diverse control systems.
-
-Our work is a comprehensive study of the SMALLEST EIGENVALUE OPTIMIZATION problem. We prove the NP - hardness and non-submodularity of this combinatorial optimization problem. Then we propose a nearly linear time heuristic algorithm. It capitalizes on two analysis methods: network derivative mining, and matrix disturbance theory, to evaluate the eigen-gap for node selection. The consistency between these two methods justifies the reliability of our analysis. Sufficient experiments and excellent results warrant the performance of our algorithm.
-
-
-
-Based on tedious analysis, the optimization of extreme eigenvalue is reduced to the computation of the corresponding eigenvector u and the core of our algorithm is shown as follows.
-
-{{< figure library="true" src="sourcecode.png" title="The core of the optimization algorithm" >}}
-
-We show our algorithms’ fairly good per- formance on diverse real world networks. Without loss of generosity, we choose connected networks with scale ranging up to million.
-
-{{< figure library="true" src="result.png" title=" λ(S) given by APPROX compares with other cen- trality such as degree, eigenvector, betweenness and closeness with k ranging from 1 to 100 on six medium nework: (a) Pages-Government, (b)US-Grid, (c) Anybeat, (d) WHOIS, (e) Pretty Good Privacy and (f) Epinions." >}}
-
 
 
