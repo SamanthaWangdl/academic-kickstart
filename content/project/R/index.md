@@ -1,19 +1,20 @@
 +++
 # Project title.
-title = "R"
+title = "Maximizing the Smallest Eigenvalue of Grounded
+Laplacian Matrix by Node Selection"
 
 # Date this page was created.
-date = 2017-11-29T00:00:00
+date = 2021-05-20T00:00:00
 
 # Project summary to display on homepage.
-summary = "Creation of the economic impact assessement package iotables."
+summary = "The smallest eigenvalue of a grounded Laplacian matrix plays a pivotal role in complex networks, such as system control, convergence rate and the robustness of a system. In this paper, we focus on the node selection problem of maximizing the smallest eigenvalue of the grounded Laplacian matrix."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
-
+tags = ["Complex Network"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "http://iotables.ceemid.eu/"
+# external_link = "http://iotables.ceemid.eu/"
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
@@ -37,15 +38,27 @@ url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://
 # To use, add an image named `featured.jpg/png` to your project's folder. 
 [image]
   # Caption (optional)
-  caption = "Screenshot of the package website"
+  caption = "Maximizing the Smallest Eigenvalue of Grounded
+Laplacian Matrix by Node Selection"
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = "Smart"
 +++
 
-The symmetric input-output tables (SIOTs) are complex statistical products that present inter-related statistics in a predefined structure. They are often found in spreadsheets that follow this structure, or in the case Eurostat in a data repository. In both cases they in reproducible research must be downloaded and restructured to programmatically accessible form. Often these highly structured statistics need to be analyzed together with other data, for example, when employment effects and multipliers are calculated. In this case processing the employment data to SIOT conforming format is a significant preprocessing challenge.
 
-The iotables are exactly designed for these tasks. Currently the package downloads and processes standardized European SIOTs conforming to the latest statistical regulations, i.e. SIOTs starting from the year 2010.
+Grounded Laplacian matrix, a principal submatrix of the Laplacian matrix, functions as a significant model in network control study. Due to the impossibility of controlling all nodes in the network, steering a fraction of nodes is a significant al- ternative, which relates to grounded Laplacian matrix closely. Both pinning control and leader selection problem employ grounded Laplacian matrix as their model, and the eigenvalue of the grounded Laplacian matrix performs as efficient metrics in diverse control systems.
 
-In order to test the analytical functions of the package and to have a manageable sized example data set, we use the real-life data from the Eurostat manual. The calculation of induced effects (Type-II multipliers) are following the Input-Output Multipliers Specification Sheet and Supporting Material, Spicosa Project Report. The analytical functions are tested against this example, too.
+Our work is a comprehensive study of the SMALLEST EIGENVALUE OPTIMIZATION problem. We prove the NP - hardness and non-submodularity of this combinatorial optimization problem. Then we propose a nearly linear time heuristic algorithm. It capitalizes on two analysis methods: network derivative mining, and matrix disturbance theory, to evaluate the eigen-gap for node selection. The consistency between these two methods justifies the reliability of our analysis. Sufficient experiments and excellent results warrant the performance of our algorithm.
+
+
+
+Based on tedious analysis, the optimization of extreme eigenvalue is reduced to the computation of the corresponding eigenvector u and the core of our algorithm is shown as follows.
+
+{{< figure library="true" src="sourcecode.png" title="The core of the optimization algorithm" >}}
+
+We show our algorithms’ fairly good per- formance on diverse real world networks. Without loss of generosity, we choose connected networks with scale ranging up to million.
+
+{{< figure library="true" src="result.png" title=" λ(S) given by APPROX compares with other cen- trality such as degree, eigenvector, betweenness and closeness with k ranging from 1 to 100 on six medium nework: (a) Pages-Government, (b)US-Grid, (c) Anybeat, (d) WHOIS, (e) Pretty Good Privacy and (f) Epinions." >}}
+
+
