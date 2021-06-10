@@ -10,7 +10,7 @@ summary = "Creation of the economic impact assessement package iotables."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
-tags = ["R"]
+# tags = ["R"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "http://iotables.ceemid.eu/"
