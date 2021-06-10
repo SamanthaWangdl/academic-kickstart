@@ -27,7 +27,7 @@ slides = ""
 url_pdf = ""
 url_slides = ""
 url_video = ""
-url_code = "https://github.com/rOpenGov/iotables/"
+# url_code = "https://github.com/rOpenGov/iotables/"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
