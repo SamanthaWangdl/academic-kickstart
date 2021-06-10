@@ -18,12 +18,12 @@ organizations:
   url: "https://www.fudan.edu.cn/en/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Artificial Intelligence, Computational Neuroscience, Biomedical Engineering.
+bio: My research interests include Interpretable ML, Computational Neuroscience, Complex Network and Control.
 
 interests:
-- Artificial Intelligence
+- Interpretable ML
 - Computational Neuroscience
-- Biomedical Engineering
+- Complex Network and Control
 
 education:
   courses:
@@ -68,8 +68,10 @@ user_groups:
 - Visitors
 ---
 
-I am currently a junior biomedical engineering student from Fudan University, educated as an electrical engineer. 
- My first exposure to research is about a magnetic hat for sports rehabilitation. At that time, the magic bonding between engineering and medicine initiated me towards this hybrid field. To engage in the real medical environment, I volunteered in the palliative hospital to accompany terminal cancer patients and also went to the summer school at Duke-NUS medical school in Singapore.
- I gradually realized that my curiosity towards biomedical engineering and computational neuroscience. And my 4.0 GPA in my second year convinced me that. Meanwhile, thanks to a doctor in the palliative hospital, who gave me inspiration for my new research on pain monitoring, I initiated my first research relevant to pain monitoring and published a conference paper on EMBC 2020.
+I am currently a junior electrical engineer(biomedical engineering) student from Fudan University with a top 1 GPA score in my major. With a long time volunteering experience in a hospice care center, I have committed myself to biomedical engineering research and innovation ever since. 
 
+My research interest originated from real-clinical problems, like pain monitoring, and ranges from machine learning study in temporal series and graphs to complex network and cybernetics. 
 
+With distinguished undergraduate research granting from a Nobel laureate, I completed a complex network control algorithm design. Besides, I am also engaging in pain monitoring problems and exploring the interpretability of them with the guide from Prof. Gari Clifford.
+
+I will apply for Ph.D. at the end of 2021.
