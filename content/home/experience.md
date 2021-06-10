@@ -2,7 +2,7 @@
 # Experience widget.
 widget = "experience"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
 title = "Experience"
@@ -30,7 +30,7 @@ date_format = "Jan 2006"
   * Intepretable Pain Monitoring Method
   """
 
-[[experience]]
+<!-- [[experience]]
   title = "Undergraduate Researcher"
   company = "Fudan University, Junzheng Granding (from Nobel Laureate)"
   company_url = ""
@@ -38,5 +38,5 @@ date_format = "Jan 2006"
   date_start = "2020-11-1"
   date_end = "2021-5-1"
   description = """Work on project relevant to graph spectral optimization algorithm design"""
-
+ -->
 +++
