@@ -54,7 +54,3 @@ Specifically, the smallest eigenvalue of grounded Laplacian matrix can not only 
 The SMALLEST EIGENVALUE OPTIMIZATION problem is inevitable and difficult. Preceding study on its inverse pro- portion with network size implies the necessity of the re- fined node-selection scheme on a large network. However, the fundamental properties of the problem resist advances. Firstly, its combinatorial nature leads to exponential compu- tation complexity so that the brute-force algorithm fails even in medium-sized networks. Secondly, without submodularity, greedy algorithms, as the conventional resort for NP-hard problems, lose their approximation guarantee. To our best knowledge, the computation techniques for this problem are either empirical or exclusive for small networks.
 Our work is a comprehensive study of the SMALLEST EIGENVALUE OPTIMIZATION problem. We prove the NP- hardness and non-submodularity of this combinatorial op- timization problem. Then we propose a nearly linear time heuristic algorithm. It capitalizes on two analysis methods: network derivative mining, and matrix disturbance theory, to evaluate the eigen-gap for node selection. The consistency between these two methods justifies the reliability of our analysis. Sufficient experiments and excellent results warrant the performance of our algorithm.
 
-
-{{< figure library="true" src="pain2.jpg" title="Nerwork Structure" >}}
-
-{{< figure library="true" src="pain1.jpg" title="Result" >}}
