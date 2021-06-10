@@ -28,7 +28,7 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Undergraduate Researcher"
-  company = "Fudan University"
+  company = "Fudan University, Prof.Zhongzhi Zhang"
   company_url = ""
   location = "California"
   date_start = "2020-11-01"
@@ -44,6 +44,15 @@ date_format = "Jan 2006"
   date_end = "2020-08-01"
   description = """[Study computational neuroscience](https://github.com/SamanthaWangdl/course-content)"""
 
+
+[[experience]]
+  title = "Undergraduate Researcher"
+  company = "Fudan University, Prof.Wei Chen and Prof.Hui Feng"
+  company_url = ""
+  location = ""
+  date_start = "2019-05-01"
+  date_end = "2020-02-01"
+  description = """Work on pain classification problem with deep learning method"""
 
 
 +++
