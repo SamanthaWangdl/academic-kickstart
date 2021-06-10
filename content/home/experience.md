@@ -21,7 +21,7 @@ date_format = "Jan 2006"
   title = "Research Intern"
   company = "Georgia Tech"
   company_url = ""
-  location = ""
+  location = "Shanghai"
   date_start = "2021-05-15"
   date_end = ""
   description = """
@@ -30,13 +30,13 @@ date_format = "Jan 2006"
   * Intepretable Pain Monitoring Method
   """
 
-<!-- [[experience]]
+[[experience]]
   title = "Undergraduate Researcher"
   company = "Fudan University, Junzheng Granding (from Nobel Laureate)"
   company_url = ""
-  location = "California"
+  location = "Shanghai"
   date_start = "2020-11-1"
   date_end = "2021-5-1"
-  description = """Work on project relevant to graph spectral optimization algorithm design"""
- -->
+  description = """Work on project relevant to graph spectral optimization algorithm design."""
+
 +++
