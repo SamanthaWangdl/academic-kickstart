@@ -11,4 +11,13 @@ title = "Biography"
 # This should be the username of a profile in your `content/authors/` folder.
 # See https://sourcethemes.com/academic/docs/get-started/#introduce-yourself
 author = "admin"
+ # Background image.
+  image = "background.jfif"  
+  # Name of image in `static/media/`.
+  image_darken = 0.6  
+  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+
+  # Text color (true=light or false=dark).
+  text_color_light = true  
+
 +++
