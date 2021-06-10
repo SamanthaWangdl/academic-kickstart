@@ -33,6 +33,6 @@ date_format = "Jan 2006"
   location = "California"
   date_start = "2020-11-01"
   date_end = "2021-05-01"
-  description = """graph spectral optimization algorithm design."""
+  description = """[graph spectral optimization algorithm design](https://runwang.xyz/project/gr/)."""
 
 +++
