@@ -24,13 +24,7 @@ date_format = "Jan 2006"
   location = ""
   date_start = "2021-05-15"
   date_end = ""
-  description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
-  """
+  description = """Intepretable Pain Monitoring Method"""
 
 [[experience]]
   title = "Professor"
