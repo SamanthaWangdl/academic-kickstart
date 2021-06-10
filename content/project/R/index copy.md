@@ -1,19 +1,20 @@
 +++
 # Project title.
-title = "R"
+title = "Maximizing the Smallest Eigenvalue of Grounded
+Laplacian Matrix by Node Selection"
 
 # Date this page was created.
-date = 2017-11-29T00:00:00
+date = 2021-05-20T00:00:00
 
 # Project summary to display on homepage.
-summary = "Creation of the economic impact assessement package iotables."
+summary = "The smallest eigenvalue of a grounded Laplacian matrix plays a pivotal role in complex networks, such as system control, convergence rate and the robustness of a system. In this paper, we focus on the node selection problem of maximizing the smallest eigenvalue of the grounded Laplacian matrix."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
-tags = ["R"]
+# tags = ["Complex Network"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "http://iotables.ceemid.eu/"
+# external_link = "http://iotables.ceemid.eu/"
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
@@ -37,11 +38,12 @@ url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://
 # To use, add an image named `featured.jpg/png` to your project's folder. 
 [image]
   # Caption (optional)
-  caption = "Screenshot of the package website"
+<!--   caption = "Maximizing the Smallest Eigenvalue of Grounded
+Laplacian Matrix by Node Selection" -->
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = "Smart"
+  # focal_point = "Smart"
 +++
 
 Grounded Laplacian matrix, a principal submatrix of the Laplacian matrix, functions as a significant model in network control study. Due to the impossibility of controlling all nodes in the network, steering a fraction of nodes is a significant al- ternative, which relates to grounded Laplacian matrix closely. Both pinning control and leader selection problem employ grounded Laplacian matrix as their model, and the eigenvalue of the grounded Laplacian matrix performs as efficient metrics in diverse control systems.
@@ -53,3 +55,6 @@ Our work is a comprehensive study of the SMALLEST EIGENVALUE OPTIMIZATION proble
 Based on tedious analysis, the optimization of extreme eigenvalue is reduced to the computation of the corresponding eigenvector u and the core of our algorithm is shown as follows.
 
 {{< figure library="true" src="sourcecode.png" title="The core of the optimization algorithm" >}}
+
+
+
