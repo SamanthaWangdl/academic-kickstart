@@ -1,10 +1,12 @@
-widget: “experience”
+widget: "experience"
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50 # Order that this section will appear.
 
 # ... Put Your Section Options Here (title etc.) ...
 
+title = "Accomplish&shy;ments"
+subtitle = ""
 # Date format
 #   Refer to https://wowchemy.com/docs/customization/#date-format
 date_format: Jan 2006
