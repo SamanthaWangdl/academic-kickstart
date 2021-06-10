@@ -11,7 +11,7 @@ summary = "The smallest eigenvalue of a grounded Laplacian matrix plays a pivota
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["economic-impact", "r-package"]`
-tags = ["Complex Network"]
+# tags = ["Complex Network"]
 
 # Optional external URL for project (replaces project detail page).
 # external_link = "http://iotables.ceemid.eu/"
@@ -38,8 +38,8 @@ url_custom = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://
 # To use, add an image named `featured.jpg/png` to your project's folder. 
 [image]
   # Caption (optional)
-  caption = "Maximizing the Smallest Eigenvalue of Grounded
-Laplacian Matrix by Node Selection"
+<!--   caption = "Maximizing the Smallest Eigenvalue of Grounded
+Laplacian Matrix by Node Selection" -->
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
@@ -60,5 +60,6 @@ Based on tedious analysis, the optimization of extreme eigenvalue is reduced to 
 We show our algorithms’ fairly good per- formance on diverse real world networks. Without loss of generosity, we choose connected networks with scale ranging up to million.
 
 {{< figure library="true" src="result.png" title=" λ(S) given by APPROX compares with other cen- trality such as degree, eigenvector, betweenness and closeness with k ranging from 1 to 100 on six medium nework: (a) Pages-Government, (b)US-Grid, (c) Anybeat, (d) WHOIS, (e) Pretty Good Privacy and (f) Epinions." >}}
+
 
 
