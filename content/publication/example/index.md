@@ -1,5 +1,6 @@
 ---
-title: "An example conference paper"
+title: "Maximizing the Smallest Eigenvalue of Grounded
+Laplacian Matrix by Node Selection"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -8,26 +9,26 @@ authors:
 - admin
 
 
-date: "2013-07-01T00:00:00Z"
+date: "2021-05-15T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: ""
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["1"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
 publication: In *Wowchemy Conference*
 publication_short: In *ICW*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: The smallest eigenvalue of a grounded Laplacian matrix plays a pivotal role in complex networks, such as system control, convergence rate and the robustness of a system. In this paper, we focus on the node selection problem of maximizing the smallest eigenvalue of the grounded Laplacian matrix for a graph with n nodes and m edges, under an upper bound constraint k ≪ n. We show this combinatorial optimization problem is NP-hard and the objective function is monotone but non-submodular. Since the optimal solution cannot be calculated directly, we adopt a greedy strategy to solve this problem by selecting one node at a time. Specifically, we employ derivatives and matrix perturbations to make our algorithm efficient with a time complexity of O ̃(km), where O ̃(·) notation suppresses the poly(log n) factors, and also applicable to large-scale networks. We conduct numerous experiments on different networks of various sizes to demonstrate the superiority of our algorithm in terms of efficiency and effectiveness compared to other methods.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: We show this combinatorial optimization problem is NP-hard and the objective function is monotone but non-submodular.Specifically, we employ derivatives and matrix perturbations to make our algorithm efficient with a nearly-linear time complexity.
 
 tags: []
 
