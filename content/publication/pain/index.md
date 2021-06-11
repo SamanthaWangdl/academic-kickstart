@@ -1,6 +1,5 @@
 ---
-title: "Maximizing the Smallest Eigenvalue of Grounded
-Laplacian Matrix by Node Selection"
+title: "Hybrid  RNN-ANN  Based  Deep  Physiological  Network  for  PainRecognition"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -13,22 +12,22 @@ date: "2021-05-15T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: ""
+publishDate: "2020-07-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["2"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: IEEE Transaction on Cybernetics(Under Review)
+publication: IEEE EMBC 2020
 publication_short: In *ICW*
 
-abstract: The smallest eigenvalue of a grounded Laplacian matrix plays a pivotal role in complex networks, such as system control, convergence rate and the robustness of a system. In this paper, we focus on the node selection problem of maximizing the smallest eigenvalue of the grounded Laplacian matrix for a graph with n nodes and m edges, under an upper bound constraint k ≪ n. We show this combinatorial optimization problem is NP-hard and the objective function is monotone but non-submodular. Since the optimal solution cannot be calculated directly, we adopt a greedy strategy to solve this problem by selecting one node at a time. Specifically, we employ derivatives and matrix perturbations to make our algorithm efficient with a time complexity of O ̃(km), where O ̃(·) notation suppresses the poly(log n) factors, and also applicable to large-scale networks. We conduct numerous experiments on different networks of various sizes to demonstrate the superiority of our algorithm in terms of efficiency and effectiveness compared to other methods.
+abstract: Quantitative  assessment  of  pain  is  vital  progressin treatment choosing and distress relief for patients. However,previous approaches based on self-report fail to provide objec-tive and accurate assessments. For impartial pain classificationbased on physiological signals, a number of methods have beenintroduced using elaborately designed handcrafted features. Inthis  study,  we  enriched  the  methods  of  physiological-signal-based pain classification by introducing deep Recurrent NeuralNetwork (RNN) based hybrid classifiers which combines auto-extracted features with human-experience enabled handcraftedfeatures.  A  bidirectional  Long  Short-Term  Memory  network(biLSTM)  was  applied  on  time  series  of  pre-processed  signalsto  automatically  learn  temporal  dynamic  characteristics  fromthem.  The  handcrafted  features  were  extracted  to  fuse  withRNN-generated features. Finely selected features from biLSTMlayer  output  and  handcrafted  features  trained  an  ArtificialNeural Network (ANN) to classify the pain intensity. The hand-crafted  features  enhance  the  RNN  classification  performanceby complementing RNN-generated features. With our accuracyreaching  83.3%,  comparison  results  on  an  open  dataset  withother  methods  show  that  the  proposed  algorithm  outperformsall of the previous researches with higher classification accuracy.Therefore, this research is a good demonstration of introducinghybrid  features  for  pain  assessment.
 
 # Summary. An optional shortened abstract.
-summary: We show this combinatorial optimization problem is NP-hard and the objective function is monotone but non-submodular.Specifically, we employ derivatives and matrix perturbations to make our algorithm efficient with a nearly-linear time complexity.
+summary: Quantitative  assessment  of  pain  is  vital  progressin treatment choosing and distress relief for patients. However,previous approaches based on self-report fail to provide objec-tive and accurate assessments. In this  study,  we  enriched  the  methods  of  physiological-signal-based pain classification by introducing deep Recurrent NeuralNetwork (RNN) based hybrid classifiers which combines auto-extracted features with human-experience enabled handcrafted features.
 
 tags: []
 
