@@ -39,7 +39,7 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Undergraduate Researcher"
-  company = "Fudan University, Prof.Zhongzhi Zhang"
+  company = "Fudan University, Prof. Zhongzhi Zhang"
   company_url = ""
   location = ""
   date_start = "2020-11-01"
