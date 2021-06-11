@@ -22,7 +22,7 @@ publishDate: ""
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *Wowchemy Conference*
+publication: IEEE Transaction on Cybernetics(Under Review)
 publication_short: In *ICW*
 
 abstract: The smallest eigenvalue of a grounded Laplacian matrix plays a pivotal role in complex networks, such as system control, convergence rate and the robustness of a system. In this paper, we focus on the node selection problem of maximizing the smallest eigenvalue of the grounded Laplacian matrix for a graph with n nodes and m edges, under an upper bound constraint k ≪ n. We show this combinatorial optimization problem is NP-hard and the objective function is monotone but non-submodular. Since the optimal solution cannot be calculated directly, we adopt a greedy strategy to solve this problem by selecting one node at a time. Specifically, we employ derivatives and matrix perturbations to make our algorithm efficient with a time complexity of O ̃(km), where O ̃(·) notation suppresses the poly(log n) factors, and also applicable to large-scale networks. We conduct numerous experiments on different networks of various sizes to demonstrate the superiority of our algorithm in terms of efficiency and effectiveness compared to other methods.
