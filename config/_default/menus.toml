@@ -18,6 +18,10 @@
   url = "#experience"
   weight = 30
 
+[[main]]
+  name = "Publication"
+  url = "#publications"
+  weight = 40
 
 
 # Link to a PDF of your resume/CV from the menu.
