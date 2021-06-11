@@ -1,5 +1,6 @@
 ---
-title: "An example conference paper"
+title: "Hybrid RNN-ANN Based Deep Physiological Network for Pain
+Recognition"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
@@ -8,11 +9,11 @@ authors:
 - admin
 
 
-date: "2013-07-01T00:00:00Z"
+date: "2020-01-01T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2020-07-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -21,13 +22,15 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *Wowchemy Conference*
-publication_short: In *ICW*
+publication: IEEE EMBC 2020
+publication_short: IEEE EMBC 2020
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Quantitative assessment of pain is vital progress in treatment choosing and distress relief for patients. However,
+previous approaches based on self-report fail to provide objective and accurate assessments. For impartial pain classification
+based on physiological signals, a number of methods have been introduced using elaborately designed handcrafted features. In this study, we enriched the methods of physiological-signalbased pain classification by introducing deep Recurrent Neural Network (RNN) based hybrid classifiers which combines autoextracted features with human-experience enabled handcrafted features. A bidirectional Long Short-Term Memory network(biLSTM) was applied on time series of pre-processed signals to automatically learn temporal dynamic characteristics from them. The handcrafted features were extracted to fuse with RNN-generated features. Finely selected features from biLSTM layer output and handcrafted features trained an Artificial Neural Network (ANN) to classify the pain intensity. The handcrafted features enhance the RNN classification performance by complementing RNN-generated features. With our accuracy reaching 83.3%, comparison results on an open dataset with other methods show that the proposed algorithm outperforms all of the previous researches with higher classification accuracy. Therefore, this research is a good demonstration of introducing hybrid features for pain assessment.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary:  This research is a good demonstration of introducing hybrid features for pain assessment
 
 tags: []
 
@@ -40,7 +43,7 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: ''
+url_code: 'https://github.com/SamanthaWangdl/painrnn'
 url_dataset: ''
 url_poster: ''
 url_project: ''
