@@ -68,9 +68,9 @@ user_groups:
 - Visitors
 ---
 
-I am currently a junior electrical engineer (biomedical engineering) student from Fudan University with a top GPA score in my major. With a long time volunteering experience in a hospice care center, I have committed myself to biomedical engineering research and innovation ever since. 
+I am currently a junior electrical engineer (biomedical engineering) student from Fudan University with a top GPA score. I have committed myself to biomedical engineering research and innovation since my volunteering experience in hospice care center. 
 
-My research interest originated from real-clinical problems, like pain monitoring, and ranges from machine learning study in temporal series and graphs to complex network and cybernetics. 
+My research interest originated from real-clinical problems, like pain monitoring, and ranges from temporal series and graphs' machine learning to complex network. 
 
 With distinguished undergraduate research granting from a Nobel laureate, I completed a complex network control algorithm design with [Prof.Zhongzhi Zhang](https://scholar.google.com/citations?user=DrcEuSkAAAAJ&hl=zh-CN). Besides, I am also engaging in pain monitoring problems and exploring the interpretability of them with the guide from [Prof. Gari Clifford](https://scholar.google.com/citations?user=VwYoZ6gAAAAJ&hl=zh-CN).
 
